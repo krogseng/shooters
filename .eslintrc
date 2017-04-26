@@ -1,0 +1,44 @@
+{
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "impliedStrict": true
+        }
+  },
+  "plugins": ["react"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true,
+    "mongo": true,
+    "commonjs": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": "off",
+    "semi": 1,
+    "indent": [2, 4],
+    "eqeqeq": 1,
+    "quotes": [1, "single"],
+    "linebreak-style": [2, "unix"],
+    "no-multi-spaces": [1, {
+      "exceptions": {
+        "VariableDeclarator": true,
+        "FunctionExpression": true
+      }
+    }],
+    "key-spacing": [0, {"align": "value"}],
+    "no-underscore-dangle": 0
+  },
+    "globals": {
+    "describe": false,
+    "it": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "before": false,
+    "after": false
+  }
+  
+}
